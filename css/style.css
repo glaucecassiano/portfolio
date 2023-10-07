@@ -7,11 +7,13 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background: linear-gradient(black, #b81469);
 }
 
@@ -23,6 +25,7 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
+  padding: 300px;
 }
 
 a {
@@ -83,27 +86,25 @@ main {
   flex-direction: column;
 }
 
-.carrosel {
-  margin: 0 auto;
-  width: 800px;
-  height: 400px;
+.carrossel{
+  box-shadow: 2px 2px 4px black;
   overflow: hidden;
+  height: 400px;
+  width: 800px;
 }
 
-
-.portifolio {
-  width: 400px;
-  height: 400px;
+.container{
   display: flex;
   transition: transform 0.5s ease-in-out;
   transform: translateX(0);
 }
 
-.portifolio img {
-  object-fit: cover; 
+
+img{
+  object-fit: cover;
+  height: 400px;
   width: 800px;
 }
-
 
 
 

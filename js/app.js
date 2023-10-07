@@ -1,15 +1,18 @@
-const imgs = document.getElementById("portifolio");
-const img = document.querySelectorAll("#img imgcarrosel");
+const imgs = document.getElementById("img");
+const img = document.querySelectorAll("#img img");
 
 
 let idx = 0;
 
 function carrossel(){
-    id ++;
+    idx++;
 
     if (idx > img.length -1){
-        idx= 0; 
+        idx = 0;
     }
 
-    imgs.style.transform = `translateX(${ -idx * 800}px)`; 
+    imgs.style.transform = `translateX(${-idx *800}px)`;
 }
+
+
+setInterval(carrossel, 2000);
